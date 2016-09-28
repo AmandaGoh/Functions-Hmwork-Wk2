@@ -50,7 +50,16 @@ console.log(longestlength);
 
 //Short Qn 8
 
+var array = ["this", "is", "random"]
 
+function filterArr(arr, x){
+
+var filtered = arr.filter(function(word){
+    return word.length > x
+})
+return filtered;
+                        
+}
 
 //Additional Qns on JS Bin
 
