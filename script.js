@@ -2,8 +2,8 @@
 var words = ["hello", "what", "is", "up", "dude"];
 
 
-var length = words.map(function(wordsLength){
-  return wordsLength.length;
+var length = words.map(function(x){
+  return x.length;
 })
 
 console.log(length);
@@ -31,14 +31,13 @@ console.log(multiplyArray);
 
 var words = "The quicker brown fox jumps over the lazy dog"
 
-var strSplit = str.split(" ");
+var strSplit = words.split(" ");
 
 //return an array of the length of each word in string
 
 var strLength= strSplit.map(function(word){
   return word.length;
 });
-
 
 //sort word lengths in ascending order
 var strSort = strLength.sort();
@@ -47,22 +46,6 @@ var strSort = strLength.sort();
 
 var longestlength = strSort[strSort.length - 1]
 
-//filter longest word
-var longestWord = strSplit.filter(function(word){
-  return word.length === longestlength;
-});
-
-console.log(longestWord);
-
-//Alt answer found on web using sort function
-var wordsSplit = words.split(" ");
-
-var lengthDiff = function (a,b){
-  return b.length - a.length
-}
-
-var longestWord = wordsSplit.sort(lengthDiff)[0]
-
-console.log(longestWord);
+console.log(longestlength);
 
 //Short Qn 8
